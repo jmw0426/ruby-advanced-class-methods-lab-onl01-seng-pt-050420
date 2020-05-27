@@ -50,8 +50,8 @@ class Song
    @artist_name 
    if filename.include?(".mp3")
       array = filename.chomp(".mp3").split(" - ")
-      @name << array[0]
-      @artist_name << array[1]
+      @name = array[0]
+      @artist_name = array[1]
   end
 end
 
