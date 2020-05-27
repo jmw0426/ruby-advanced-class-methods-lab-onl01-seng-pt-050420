@@ -48,6 +48,8 @@ class Song
  def self.new_from_filename(filename)
    if filename.include?(".mp3")
       filename.chomp(".mp3").split(" - ")
+      @name << filename[0]
+      @artist_name << filename[1]
   end
 end
 
