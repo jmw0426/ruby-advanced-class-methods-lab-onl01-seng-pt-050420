@@ -47,6 +47,6 @@ class Song
   
   def self.new_from_filename(filename)
     if filename.include?(".mp3")
-      
+      filename.split("-")
   end
 end
