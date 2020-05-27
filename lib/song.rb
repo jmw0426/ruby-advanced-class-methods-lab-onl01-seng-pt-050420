@@ -40,6 +40,7 @@ class Song
           song.name
         else 
           Song.create_by_name
+        end
     end
   end
 
