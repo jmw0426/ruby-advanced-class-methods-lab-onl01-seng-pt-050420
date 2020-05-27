@@ -53,8 +53,8 @@ class Song
  def self.new_from_filename(filename)
    if filename.include?(".mp3")
       array = filename.chomp(".mp3").split(" - ")
-      artist_name = array[0]
-      name = array[1]
+      song.artist_name = array[0]
+      song.name = array[1]
     end
     artist_name && name
   end
