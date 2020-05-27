@@ -51,3 +51,5 @@ class Song
       filename.chomp(".mp3").split(" - ")
   end
 end
+
+end
