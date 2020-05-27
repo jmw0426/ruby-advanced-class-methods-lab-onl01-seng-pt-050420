@@ -53,10 +53,9 @@ class Song
  def self.new_from_filename(filename)
    if filename.include?(".mp3")
       array = filename.chomp(".mp3").split(" - ")
-      song.artist_name = array[0]
-      song.name = array[1]
+      self.find_or_create_by_name(array[1])
+      # self. = array[0]
     end
-    artist_name && name
   end
 
 end
