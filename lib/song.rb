@@ -46,6 +46,8 @@ class Song
   end
   
  def self.new_from_filename(filename)
+   @name = []
+   @artist_name = []
    if filename.include?(".mp3")
       array = filename.chomp(".mp3").split(" - ")
       @name << array[0]
