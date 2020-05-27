@@ -53,10 +53,10 @@ class Song
       singer = array[0]
       @song = self.new
       @song.save
-      @
-      
-      
+      @song.name = music
+      @song.artist_name = singer
     end
+    @song
   end
   
 
