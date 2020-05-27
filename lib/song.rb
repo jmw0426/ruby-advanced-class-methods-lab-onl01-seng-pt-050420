@@ -54,7 +54,7 @@ class Song
    if filename.include?(".mp3")
       array = filename.chomp(".mp3").split(" - ")
       self.create_by_name(array[1])
-      # self. = array[0]
+      self. = array[0]
     end
   end
 
