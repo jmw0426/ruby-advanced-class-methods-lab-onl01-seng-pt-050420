@@ -55,7 +55,6 @@ class Song
       array = filename.chomp(".mp3").split(" - ")
       artist_name = array[0]
       name = array[1]
-      @@all << artist_name && @@all << name
     end
   end
 
