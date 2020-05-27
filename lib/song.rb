@@ -10,10 +10,10 @@ class Song
     self.class.all << self
   end
   
-  def initialize
-    @name = name
-    @artist_name = artist_name
-  end
+  # def initialize
+  #   @name = name
+  #   @artist_name = artist_name
+  # end
   
   def self.create
     song = self.new 
@@ -53,8 +53,8 @@ class Song
  def self.new_from_filename(filename)
    if filename.include?(".mp3")
       array = filename.chomp(".mp3").split(" - ")
-      artist_name = array[0]
-      name = array[1]
+      self.artist_name = array[0]
+      self.name = array[1]
     end
   end
 
